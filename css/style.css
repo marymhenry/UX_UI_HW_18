@@ -49,7 +49,7 @@ body {
     grid-template-rows: 90px 400px;
     grid-template-areas: 
     "name title 0 photo"
-    "bodyText bodyText bodyText photo";
+    "bodyText bodyText bodyText profilePhoto";
 }
 #name {
     grid-area: name;
@@ -78,7 +78,7 @@ body {
     grid-area: bodyText;
     text-align: top;
 }
-#photo {
+#profilePhoto {
     grid-area: photo;
     background-image: url("../images/987A7944-Edit-small.jpg");
     align-items: center;
