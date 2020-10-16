@@ -1,0 +1,114 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#navigation {
+    display: grid;
+    background-color: #FDD7D5;
+    color: #3A7262;
+    font-weight: 400;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "logo 0 0 0 0 mySkills myWork aboutMe";
+}
+
+#logo {
+    grid-area: logo;
+}
+#mySkills {
+    grid-area: mySkills;
+    margin-bottom: 25px;
+}
+#myWork {
+    grid-area: myWork;
+    margin-bottom: 25px;
+}
+#aboutMe {
+    grid-area: aboutMe;
+    margin-bottom: 25px;
+}
+
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+#bodySection {
+    display: grid;
+    background-color: white;
+    color:black;
+    border: 1px black;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 90px 400px;
+    grid-template-areas: 
+    "name title 0 photo"
+    "bodyText bodyText bodyText photo";
+}
+#name {
+    grid-area: name;
+    font-size: 48px;
+    color: #3A7262;
+    text-align: center;
+    align-items: center;
+    justify-content: end;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'Quicksand', sans-serif;
+    }
+
+#title {
+    grid-area: title;
+    font-size: 30px;
+    color: #3A7262;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-family: 'Quicksand', sans-serif;
+    }
+
+#bodyText {
+    grid-area: bodyText;
+    text-align: top;
+}
+#photo {
+    grid-area: photo;
+    background-image: url("../images/987A7944-Edit-small.jpg");
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.bodyGridArea {
+  display: grid;
+  background-repeat: no-repeat;
+}
+.heading {
+    margin-left: 100px;
+    margin-right: 75px;
+    margin-top: 50px;
+}
+#footer {
+    display: grid;
+    background-color: #FDD7D5;
+    color: #3A7262;
+    font-weight: 400;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "0 0 0 0 0 0 0 contact";
+}
+#contact {
+    grid-area: contact;
+    align-items: center;
+    justify-content: center;
+}
+.footerGridArea {
+    display: grid;
+}
