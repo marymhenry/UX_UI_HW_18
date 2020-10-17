@@ -135,7 +135,7 @@ h3 {
     background-color: white;
     color:#3A7262;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 350px;
+    grid-template-rows: 100%;
     grid-template-areas: 
     "skill1 skill2 skill3 skill4";
 }
