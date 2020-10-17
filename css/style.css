@@ -176,9 +176,8 @@ h3 {
     text-align: left;
     align-items: center;
     margin:20px;
-    padding: 31px;
+    padding: 15px 15px 15px 31px;
     border: 5px solid #FDD7D5;
-    height: 325px;
 }
 
 ul {
@@ -237,4 +236,95 @@ ul {
     align-items: center;
     padding: 15px;
     border: 5px solid #FDD7D5;
+}
+
+@media only screen and (max-width: 600px) {
+    #bodySection {
+        display: grid;
+        background-color: white;
+        color:#3A7262;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 90px 90px 350px 1fr;
+        grid-template-areas: 
+        "name"
+        "title"
+        "profilePhoto"
+        "bodyText" ;
+}
+    #name {
+        grid-area: name;
+        font-size: 48px;
+        color: #3A7262;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        font-family: 'Quicksand', sans-serif;
+    }
+    #profilePhoto {
+        grid-area: profilePhoto;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;   
+    }
+    #mySkillsPage {
+        display: grid;
+        background-color: white;
+        color:#3A7262;
+        grid-template-columns: 1fr;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-areas: 
+        "skill1"
+        "skill2" 
+        "skill3" 
+        "skill4";
+}
+    #skill4 {
+        grid-area: skill4;
+        color: #3A7262;
+        text-align: left;
+        align-items: center;
+        height: 300px;
+        margin: 20px;
+        padding: 15px 15px 15px 15px;
+        border: 5px solid #FDD7D5;
+    }
+
+    #myWorkBody {
+        display: grid;
+        background-color: white;
+        color:#3A7262;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "copyCatPhoto" 
+        "copyCat" 
+        "streetSmartPhoto"
+        "streetSmart" 
+        "kivaPhoto"
+        "kiva";
+    }
+    #copyCatPhoto {
+        grid-area: copyCatPhoto;
+        width: 200px;
+        justify-content: center;
+    }
+    
+    #streetSmartPhoto {
+        grid-area: streetSmartPhoto;
+        width: 200px;
+        justify-content: center;
+    }
+    
+    #kivaPhoto {
+        grid-area: kivaPhoto;
+        width: 200px;
+        justify-content: center;
+    }
 }
